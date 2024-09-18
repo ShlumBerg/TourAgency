@@ -93,6 +93,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 33;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // label7
             // 
@@ -147,6 +148,7 @@
             this.comboBoxFoods.Name = "comboBoxFoods";
             this.comboBoxFoods.Size = new System.Drawing.Size(155, 21);
             this.comboBoxFoods.TabIndex = 27;
+            this.comboBoxFoods.SelectedIndexChanged += new System.EventHandler(this.comboBoxFoods_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -457,8 +459,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonCancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FindHotel";
-            this.Text = "FindHotel";
+            this.Text = "Поиск отеля";
             this.Load += new System.EventHandler(this.FindHotel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelIDnumericUpDown2)).EndInit();

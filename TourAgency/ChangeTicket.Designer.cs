@@ -257,8 +257,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChangeTicket";
-            this.Text = "ChangeTicket";
+            this.Text = "Изменение билета";
             this.Load += new System.EventHandler(this.ChangeTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRoute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPriceChild)).EndInit();

@@ -92,6 +92,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 33;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // label7
             // 
@@ -243,8 +244,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonCancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChangeHotel";
-            this.Text = "ChangeHotel";
+            this.Text = "Изменение отеля";
             this.Load += new System.EventHandler(this.ChangeHotel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);

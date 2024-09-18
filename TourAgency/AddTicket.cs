@@ -32,7 +32,11 @@ namespace TourAgency
             {
                 MessageBox.Show("Маршрута с данным индексом нет в базе!");
             }
-            else 
+            else if (dateTimePicker2.Value < dateTimePicker1.Value) 
+            {
+                MessageBox.Show("Время обратного полёта не может быть раньше времени прямого!");
+            }
+            else
             {
                 MySqlCommand comm1 = new MySqlCommand($"insert into tickets (persons_count,route_id,tickets_count,nights_count,flight_out_time," +
                     $"return_flight_time,price_child,price_adult) values " +

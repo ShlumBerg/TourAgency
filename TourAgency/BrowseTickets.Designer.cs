@@ -38,9 +38,9 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(649, 373);
+            this.AddButton.Location = new System.Drawing.Point(1184, 373);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(139, 65);
+            this.AddButton.Size = new System.Drawing.Size(197, 65);
             this.AddButton.TabIndex = 9;
             this.AddButton.Text = "Добавить";
             this.AddButton.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@
             // DeleteButton
             // 
             this.DeleteButton.Enabled = false;
-            this.DeleteButton.Location = new System.Drawing.Point(433, 373);
+            this.DeleteButton.Location = new System.Drawing.Point(778, 373);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(139, 65);
+            this.DeleteButton.Size = new System.Drawing.Size(213, 65);
             this.DeleteButton.TabIndex = 8;
             this.DeleteButton.Text = "Удалить";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@
             // Changebutton
             // 
             this.Changebutton.Enabled = false;
-            this.Changebutton.Location = new System.Drawing.Point(219, 373);
+            this.Changebutton.Location = new System.Drawing.Point(392, 373);
             this.Changebutton.Name = "Changebutton";
-            this.Changebutton.Size = new System.Drawing.Size(139, 65);
+            this.Changebutton.Size = new System.Drawing.Size(195, 65);
             this.Changebutton.TabIndex = 7;
             this.Changebutton.Text = "Изменить";
             this.Changebutton.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // 
             this.Closebutton.Location = new System.Drawing.Point(12, 373);
             this.Closebutton.Name = "Closebutton";
-            this.Closebutton.Size = new System.Drawing.Size(139, 65);
+            this.Closebutton.Size = new System.Drawing.Size(213, 65);
             this.Closebutton.TabIndex = 6;
             this.Closebutton.Text = "Закрыть";
             this.Closebutton.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 355);
+            this.dataGridView1.Size = new System.Drawing.Size(1369, 355);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
@@ -97,14 +97,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1393, 450);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.Changebutton);
             this.Controls.Add(this.Closebutton);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BrowseTickets";
-            this.Text = "BrowseTickets";
+            this.Text = "Просмотр билетов";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

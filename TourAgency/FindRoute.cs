@@ -240,7 +240,7 @@ namespace TourAgency
                 }
                 else
                 {
-                    poolId = FoodsIds[comboBoxFoods.SelectedIndex];
+                    foodsId = FoodsIds[comboBoxFoods.SelectedIndex];
                 }
             }
             int cityId = -1;
@@ -287,6 +287,24 @@ namespace TourAgency
         private void checkBoxDescription_CheckedChanged(object sender, EventArgs e)
         {
             textBoxDescription.Enabled = ((CheckBox)sender).Checked;
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+            var charsToRemove = new string[] { "\'", "%", "_", "\\" };
+            foreach (var c in charsToRemove)
+            {
+                ((TextBox)sender).Text = ((TextBox)sender).Text.Replace(c, string.Empty);
+            }
+        }
+
+        private void textBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+            var charsToRemove = new string[] { "\'", "%", "_", "\\" };
+            foreach (var c in charsToRemove)
+            {
+                ((TextBox)sender).Text = ((TextBox)sender).Text.Replace(c, string.Empty);
+            }
         }
     }
 }

@@ -229,7 +229,7 @@ namespace TourAgency
                 }
                 else
                 {
-                    poolId = FoodsIds[comboBoxFoods.SelectedIndex];
+                    foodsId = FoodsIds[comboBoxFoods.SelectedIndex];
                 }
             }
 
@@ -246,6 +246,20 @@ namespace TourAgency
         }
 
         private void FindHotel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+            var charsToRemove = new string[] { "\'", "%", "_", "\\" };
+            foreach (var c in charsToRemove)
+            {
+                ((TextBox)sender).Text = ((TextBox)sender).Text.Replace(c, string.Empty);
+            }
+        }
+
+        private void comboBoxFoods_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

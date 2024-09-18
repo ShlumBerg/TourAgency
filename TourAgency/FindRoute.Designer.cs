@@ -302,6 +302,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 67;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // label7
             // 
@@ -527,6 +528,7 @@
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxDescription.Size = new System.Drawing.Size(296, 139);
             this.textBoxDescription.TabIndex = 91;
+            this.textBoxDescription.TextChanged += new System.EventHandler(this.textBoxDescription_TextChanged);
             // 
             // FindRoute
             // 
@@ -571,8 +573,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonCancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FindRoute";
-            this.Text = "FindRoute";
+            this.Text = "Поиск маршрута";
             this.Load += new System.EventHandler(this.FindRoute_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -73,8 +73,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "DeleteHotel";
-            this.Text = "DeleteHotel";
+            this.Text = "Удаление отеля";
             this.Load += new System.EventHandler(this.DeleteHotel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

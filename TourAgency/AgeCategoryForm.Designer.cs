@@ -102,8 +102,11 @@
             this.Controls.Add(this.Changebutton);
             this.Controls.Add(this.Closebutton);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AgeCategoryForm";
-            this.Text = "AgeCategoryForm";
+            this.Text = "Просмотр возрастных категорий";
             this.Load += new System.EventHandler(this.AgeCategoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

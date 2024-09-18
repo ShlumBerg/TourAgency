@@ -102,8 +102,11 @@
             this.Controls.Add(this.Changebutton);
             this.Controls.Add(this.Closebutton);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "regionForm";
-            this.Text = "regionForm";
+            this.Text = "Просмотр регионов";
             this.Load += new System.EventHandler(this.regionForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

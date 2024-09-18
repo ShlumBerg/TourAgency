@@ -40,5 +40,14 @@ namespace TourAgency
             form.showAll();
             Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            var charsToRemove = new string[] { "\'", "%", "_", "\\" };
+            foreach (var c in charsToRemove)
+            {
+                ((TextBox)sender).Text = ((TextBox)sender).Text.Replace(c, string.Empty);
+            }
+        }
     }
 }

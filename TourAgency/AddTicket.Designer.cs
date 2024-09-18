@@ -257,8 +257,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddTicket";
-            this.Text = "AddTicket";
+            this.Text = "Добавить билет";
             this.Load += new System.EventHandler(this.AddTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPeople)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTickets)).EndInit();

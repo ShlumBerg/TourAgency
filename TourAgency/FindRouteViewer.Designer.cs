@@ -38,9 +38,9 @@
             // DeleteButton
             // 
             this.DeleteButton.Enabled = false;
-            this.DeleteButton.Location = new System.Drawing.Point(649, 373);
+            this.DeleteButton.Location = new System.Drawing.Point(1020, 373);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(139, 65);
+            this.DeleteButton.Size = new System.Drawing.Size(429, 65);
             this.DeleteButton.TabIndex = 11;
             this.DeleteButton.Text = "Удалить";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@
             // Changebutton
             // 
             this.Changebutton.Enabled = false;
-            this.Changebutton.Location = new System.Drawing.Point(334, 373);
+            this.Changebutton.Location = new System.Drawing.Point(480, 373);
             this.Changebutton.Name = "Changebutton";
-            this.Changebutton.Size = new System.Drawing.Size(139, 65);
+            this.Changebutton.Size = new System.Drawing.Size(401, 65);
             this.Changebutton.TabIndex = 10;
             this.Changebutton.Text = "Изменить";
             this.Changebutton.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // 
             this.Closebutton.Location = new System.Drawing.Point(12, 373);
             this.Closebutton.Name = "Closebutton";
-            this.Closebutton.Size = new System.Drawing.Size(139, 65);
+            this.Closebutton.Size = new System.Drawing.Size(411, 65);
             this.Closebutton.TabIndex = 9;
             this.Closebutton.Text = "Закрыть";
             this.Closebutton.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 355);
+            this.dataGridView1.Size = new System.Drawing.Size(1437, 355);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter_1);
             // 
@@ -85,13 +85,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1483, 450);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.Changebutton);
             this.Controls.Add(this.Closebutton);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FindRouteViewer";
-            this.Text = "FindRouteViewer";
+            this.Text = "Результаты поиска маршрута";
             this.Load += new System.EventHandler(this.FindRouteViewer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

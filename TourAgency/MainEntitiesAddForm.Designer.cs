@@ -52,6 +52,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(464, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // CancelButton
             // 
@@ -82,8 +83,11 @@
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainEntitiesAddForm";
-            this.Text = "MainEntitiesAddForm";
+            this.Text = "Добавить элемент";
             this.Load += new System.EventHandler(this.MainEntitiesAddForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
