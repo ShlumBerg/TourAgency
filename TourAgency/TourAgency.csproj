@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{237C92C9-03F2-4A8D-BDF1-DCE532DE7BA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TourAgency</RootNamespace>
+    <AssemblyName>TourAgency</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.26.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.0.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.8.0.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.0\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHotel.Designer.cs">
+      <DependentUpon>AddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoute.Designer.cs">
+      <DependentUpon>AddRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTicket.Designer.cs">
+      <DependentUpon>AddTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgeCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgeCategoryForm.Designer.cs">
+      <DependentUpon>AgeCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgeCategoryFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgeCategoryFormAdd.Designer.cs">
+      <DependentUpon>AgeCategoryFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgeCategoryFormChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgeCategoryFormChange.Designer.cs">
+      <DependentUpon>AgeCategoryFormChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgeCategoryFormWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgeCategoryFormWarning.Designer.cs">
+      <DependentUpon>AgeCategoryFormWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseTickets.Designer.cs">
+      <DependentUpon>BrowseTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CascadeWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CascadeWarning.Designer.cs">
+      <DependentUpon>CascadeWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeHotel.Designer.cs">
+      <DependentUpon>ChangeHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRoute.Designer.cs">
+      <DependentUpon>ChangeRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeTicket.Designer.cs">
+      <DependentUpon>ChangeTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionForm.Designer.cs">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteHotel.Designer.cs">
+      <DependentUpon>DeleteHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteRoute.Designer.cs">
+      <DependentUpon>DeleteRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindHotel.Designer.cs">
+      <DependentUpon>FindHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindHotelViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindHotelViewer.Designer.cs">
+      <DependentUpon>FindHotelViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindRoute.Designer.cs">
+      <DependentUpon>FindRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindRouteViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindRouteViewer.Designer.cs">
+      <DependentUpon>FindRouteViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainEntitiesAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainEntitiesAddForm.Designer.cs">
+      <DependentUpon>MainEntitiesAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainEntitiesChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainEntitiesChangeForm.Designer.cs">
+      <DependentUpon>MainEntitiesChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainEntitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainEntitiesForm.Designer.cs">
+      <DependentUpon>MainEntitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regionAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regionAddForm.Designer.cs">
+      <DependentUpon>regionAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regionDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regionDeleteForm.Designer.cs">
+      <DependentUpon>regionDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regionForm.Designer.cs">
+      <DependentUpon>regionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regionUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regionUpdateForm.Designer.cs">
+      <DependentUpon>regionUpdateForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddHotel.resx">
+      <DependentUpon>AddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoute.resx">
+      <DependentUpon>AddRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTicket.resx">
+      <DependentUpon>AddTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgeCategoryForm.resx">
+      <DependentUpon>AgeCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgeCategoryFormAdd.resx">
+      <DependentUpon>AgeCategoryFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgeCategoryFormChange.resx">
+      <DependentUpon>AgeCategoryFormChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgeCategoryFormWarning.resx">
+      <DependentUpon>AgeCategoryFormWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseTickets.resx">
+      <DependentUpon>BrowseTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CascadeWarning.resx">
+      <DependentUpon>CascadeWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeHotel.resx">
+      <DependentUpon>ChangeHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRoute.resx">
+      <DependentUpon>ChangeRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeTicket.resx">
+      <DependentUpon>ChangeTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionForm.resx">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteHotel.resx">
+      <DependentUpon>DeleteHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteRoute.resx">
+      <DependentUpon>DeleteRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindHotel.resx">
+      <DependentUpon>FindHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindHotelViewer.resx">
+      <DependentUpon>FindHotelViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindRoute.resx">
+      <DependentUpon>FindRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindRouteViewer.resx">
+      <DependentUpon>FindRouteViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainEntitiesAddForm.resx">
+      <DependentUpon>MainEntitiesAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainEntitiesChangeForm.resx">
+      <DependentUpon>MainEntitiesChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainEntitiesForm.resx">
+      <DependentUpon>MainEntitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="regionAddForm.resx">
+      <DependentUpon>regionAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regionDeleteForm.resx">
+      <DependentUpon>regionDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regionForm.resx">
+      <DependentUpon>regionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regionUpdateForm.resx">
+      <DependentUpon>regionUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
