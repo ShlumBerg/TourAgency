@@ -134,5 +134,10 @@ namespace TourAgency
             com.ExecuteNonQuery();
             MessageBox.Show("Неактульные билеты удалены!");
         }
+
+        private void билетыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

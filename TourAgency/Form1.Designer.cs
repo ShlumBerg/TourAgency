@@ -93,6 +93,7 @@
             this.билетыToolStripMenuItem.Name = "билетыToolStripMenuItem";
             this.билетыToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.билетыToolStripMenuItem.Text = "Билеты";
+            this.билетыToolStripMenuItem.Click += new System.EventHandler(this.билетыToolStripMenuItem_Click);
             // 
             // добавитьБилетToolStripMenuItem
             // 
@@ -145,14 +146,14 @@
             // добавитьОтельToolStripMenuItem
             // 
             this.добавитьОтельToolStripMenuItem.Name = "добавитьОтельToolStripMenuItem";
-            this.добавитьОтельToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.добавитьОтельToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.добавитьОтельToolStripMenuItem.Text = "Добавить отель";
             this.добавитьОтельToolStripMenuItem.Click += new System.EventHandler(this.добавитьОтельToolStripMenuItem_Click);
             // 
             // найтиОтельToolStripMenuItem
             // 
             this.найтиОтельToolStripMenuItem.Name = "найтиОтельToolStripMenuItem";
-            this.найтиОтельToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.найтиОтельToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.найтиОтельToolStripMenuItem.Text = "Найти отель";
             this.найтиОтельToolStripMenuItem.Click += new System.EventHandler(this.найтиОтельToolStripMenuItem_Click);
             // 
@@ -168,7 +169,7 @@
             // просмотрToolStripMenuItem4
             // 
             this.просмотрToolStripMenuItem4.Name = "просмотрToolStripMenuItem4";
-            this.просмотрToolStripMenuItem4.Size = new System.Drawing.Size(131, 22);
+            this.просмотрToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.просмотрToolStripMenuItem4.Text = "Просмотр";
             this.просмотрToolStripMenuItem4.Click += new System.EventHandler(this.просмотрToolStripMenuItem4_Click);
             // 
@@ -184,7 +185,7 @@
             // просмотрToolStripMenuItem5
             // 
             this.просмотрToolStripMenuItem5.Name = "просмотрToolStripMenuItem5";
-            this.просмотрToolStripMenuItem5.Size = new System.Drawing.Size(131, 22);
+            this.просмотрToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
             this.просмотрToolStripMenuItem5.Text = "Просмотр";
             this.просмотрToolStripMenuItem5.Click += new System.EventHandler(this.просмотрToolStripMenuItem5_Click);
             // 
@@ -200,7 +201,7 @@
             // просмотрToolStripMenuItem2
             // 
             this.просмотрToolStripMenuItem2.Name = "просмотрToolStripMenuItem2";
-            this.просмотрToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+            this.просмотрToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.просмотрToolStripMenuItem2.Text = "Просмотр";
             this.просмотрToolStripMenuItem2.Click += new System.EventHandler(this.просмотрToolStripMenuItem2_Click);
             // 
@@ -216,7 +217,7 @@
             // просмотрToolStripMenuItem
             // 
             this.просмотрToolStripMenuItem.Name = "просмотрToolStripMenuItem";
-            this.просмотрToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.просмотрToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.просмотрToolStripMenuItem.Text = "Просмотр";
             this.просмотрToolStripMenuItem.Click += new System.EventHandler(this.просмотрToolStripMenuItem_Click);
             // 
@@ -232,7 +233,7 @@
             // просмотрToolStripMenuItem3
             // 
             this.просмотрToolStripMenuItem3.Name = "просмотрToolStripMenuItem3";
-            this.просмотрToolStripMenuItem3.Size = new System.Drawing.Size(131, 22);
+            this.просмотрToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.просмотрToolStripMenuItem3.Text = "Просмотр";
             this.просмотрToolStripMenuItem3.Click += new System.EventHandler(this.просмотрToolStripMenuItem3_Click);
             // 
